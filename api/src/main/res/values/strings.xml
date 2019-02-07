@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">AM HD Player extension library</string>
+  <string name="network_error_title">No Internet connection</string>
+  <string name="network_error_message">This extension needs your device to be connected to internet</string>
+  <string name="vlc_error_title">AM HD Player is not installed</string>
+  <string name="vlc_error_message">This feature needs AM HD Player application to be installed on your device</string>
+</resources>
