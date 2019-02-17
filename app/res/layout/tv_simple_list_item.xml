@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
     <data>
-        <import type="org.videolan.mudiAudioVideo.media.MediaUtils" />
+        <import type="org.videolan.hdplayeram.media.MediaUtils" />
         <variable
             name="bgColor"
             type="int" />

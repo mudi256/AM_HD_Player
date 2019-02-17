@@ -22,12 +22,12 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.videolan.mudiAudioVideo.plugin.api">
+    package="org.videolan.hdplayeram.plugin.api">
 
     <application android:label="@string/app_name"
         android:supportsRtl="true">
 
-      <activity android:name="org.videolan.mudiAudioVideo.extensions.api.WarningActivity"
+      <activity android:name="org.videolan.hdplayeram.extensions.api.WarningActivity"
         android:theme="@style/TransparentTheme" />
     </application>
 

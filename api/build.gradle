@@ -29,7 +29,7 @@ ext {
     repoName = 'Android'
     libraryName = 'VLC-API'
     desc = 'SDK for VLC-Android extensions'
-    lib_artifact = 'mudiAudioVideo-extensions'
+    lib_artifact = 'hdplayeram-extensions'
 
     libraryDescription = 'SDK for VLC-Android extensions'
 }

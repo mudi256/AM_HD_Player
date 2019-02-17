@@ -53,7 +53,7 @@ public class RendererDiscoverer extends VLCObject<RendererDiscoverer.Event> {
      * Create a MediaDiscover.
      *
      * @param libVLC a valid LibVLC
-     * @param name Name of the mudiAudioVideo service discovery.
+     * @param name Name of the hdplayeram service discovery.
      */
     public RendererDiscoverer(LibVLC libVLC, String name) {
         super(libVLC);

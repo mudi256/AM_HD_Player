@@ -3,7 +3,7 @@
     <data>
         <variable
             name="progress"
-            type="androidx.lifecycle.LiveData&lt;org.videolan.mudiAudioVideo.viewmodels.PlaybackProgress>" />
+            type="androidx.lifecycle.LiveData&lt;org.videolan.hdplayeram.viewmodels.PlaybackProgress>" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"

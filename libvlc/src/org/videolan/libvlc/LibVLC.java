@@ -74,7 +74,7 @@ public class LibVLC extends VLCObject<LibVLC.Event> {
                 options.add("RV16");
             }
         }
-        nativeNew(options.toArray(new String[options.size()]), context.getDir("mudiAudioVideo", Context.MODE_PRIVATE).getAbsolutePath());
+        nativeNew(options.toArray(new String[options.size()]), context.getDir("hdplayeram", Context.MODE_PRIVATE).getAbsolutePath());
     }
 
     /**
@@ -137,7 +137,7 @@ public class LibVLC extends VLCObject<LibVLC.Event> {
 
         try {
             System.loadLibrary("c++_shared");
-            System.loadLibrary("mudiAudioVideo");
+            System.loadLibrary("hdplayeram");
             System.loadLibrary("vlcjni");
         } catch (UnsatisfiedLinkError ule) {
             Log.e(TAG, "Can't load vlcjni library: " + ule);

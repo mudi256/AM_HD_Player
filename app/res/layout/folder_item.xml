@@ -17,7 +17,7 @@
 
         <variable
             name="holder"
-            type="org.videolan.mudiAudioVideo.gui.folders.FoldersAdapter.ViewHolder" />
+            type="org.videolan.hdplayeram.gui.folders.FoldersAdapter.ViewHolder" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

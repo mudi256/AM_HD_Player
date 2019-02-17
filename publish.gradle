@@ -3,8 +3,8 @@ apply plugin: 'com.github.dcendents.android-maven'
 group = 'org.videolan.android'
 version = library_version
 
-def siteUrl = 'https://code.videolan.org/videolan/mudiAudioVideo-android/'
-def gitUrl = 'https://code.videolan.org/videolan/mudiAudioVideo-android.git'
+def siteUrl = 'https://code.videolan.org/videolan/hdplayeram-android/'
+def gitUrl = 'https://code.videolan.org/videolan/hdplayeram-android.git'
 
 def licenseName = 'GNU Lesser General Public License, version 2.1'
 def licenseUrl = 'https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html'
@@ -39,7 +39,7 @@ install {
             artifactId lib_artifact
             name repoName
             description libraryDescription
-            url 'https://code.videolan.org/videolan/mudiAudioVideo-android/'
+            url 'https://code.videolan.org/videolan/hdplayeram-android/'
 
             licenses {
                 license {
@@ -76,10 +76,10 @@ bintray {
         name = libraryName
         desc = libraryDescription
         websiteUrl = siteUrl
-        issueTrackerUrl = 'https://code.videolan.org/videolan/mudiAudioVideo-android/issues'
+        issueTrackerUrl = 'https://code.videolan.org/videolan/hdplayeram-android/issues'
         licenses = allLicenses
         vcsUrl = gitUrl
-        labels = ['aar', 'android', 'mudiAudioVideo']
+        labels = ['aar', 'android', 'hdplayeram']
         dryRun = false
         override = true
         publicDownloadNumbers = true

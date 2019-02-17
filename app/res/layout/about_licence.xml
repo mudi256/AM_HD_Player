@@ -1,7 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merge xmlns:android="http://schemas.android.com/apk/res/android" >
-    <WebView
+
+    <LinearLayout
         android:id="@+id/webview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp">
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Personal Data Collection and Use"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:text="We use Personal Information to facilitate and improve our Services and communicate with you following existing regulations, while data integrity, accuracy, relevancy and legally justified processing are ensured. The data we collect depends on the context of your interactions with us, the choices you make, including your privacy settings, and the products and features listed below:"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="General Information:"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:text="The general data we collect can include SDK/API/JS code version, browser, Internet service provider, IP address, platform, timestamp, application identifier, application version, application distribution channel, independent device identifier, Android ad master identifier, network card (MAC) address, and international mobile device identification code (IMEI) the equipment model, the terminal manufacturer, the terminal device operating system version, the session start / stop time, the location of the language, the time zone and the network state (WiFi and so on)."
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Creating a J2 Account and Profile Information:"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:text="When you create a J2 account, you must provide access credentials either in the form of an email address and password or by authentication using another service, such as Twitter. You may optionally provide us with additional profile information, including a short bio, location, and profile picture. If you create your J2 account by connecting through another service, we may use public information from that connected account to help complete your J2 profile. You may update or modify your profile information and contact information at any time. Profile information is available publicly on our Services, such as on your profile page."
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Third-Party Services:"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:text="J2 uses a variety of third-party services to help provide our Services, including to host our various blogs and wikis and to help us understand the use of our Services. These third-party service providers may use cookies and other technologies to collect information about your use of our Services and other websites and services, including your IP address, device ID, pages viewed, and links clicked. Our service providers include Google Analytics and its demographics and interests reporting feature"
+            />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
 </merge>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.videolan.mudiAudioVideo.gui.view.HackyDrawerLayout
+<RelativeLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+<org.videolan.hdplayeram.gui.view.HackyDrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,7 +14,8 @@
     android:nextFocusRight="@+id/ml_menu_search"
     android:nextFocusUp="@+id/ml_menu_search"
     android:nextFocusDown="@+id/ml_menu_search"
-    android:nextFocusForward="@+id/ml_menu_search" >
+    android:nextFocusForward="@+id/ml_menu_search"
+    android:layout_above="@+id/bottomRelative">
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinator"
         android:layout_width="match_parent"
@@ -18,6 +23,21 @@
 
         <include layout="@layout/toolbar"/>
 
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#000"-->
+            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+            <!--<com.google.android.gms.ads.AdView-->
+                <!--xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/adView2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--ads:adSize="SMART_BANNER"-->
+                <!--ads:adUnitId="@string/BANNER">-->
+            <!--</com.google.android.gms.ads.AdView>-->
+        <!--</RelativeLayout>-->
         <FrameLayout
             android:id="@+id/fragment_placeholder"
             android:layout_width="match_parent"
@@ -46,24 +66,10 @@
             app:rippleColor="@color/orange50"
             app:layout_anchor="@+id/fragment_placeholder"
             app:layout_anchorGravity="bottom|end"
-            app:layout_behavior="org.videolan.mudiAudioVideo.gui.helpers.FloatingActionButtonBehavior"
+            app:layout_behavior="org.videolan.hdplayeram.gui.helpers.FloatingActionButtonBehavior"
             android:visibility="invisible"
             android:layout_margin="16dp"/>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#000"
-            android:layout_gravity="bottom">
-            <com.google.android.gms.ads.AdView
-                xmlns:ads="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/adView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                ads:adSize="SMART_BANNER"
-                ads:adUnitId="@string/BANNER">
-            </com.google.android.gms.ads.AdView>
-        </RelativeLayout>
+
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <!-- The navigation drawer -->
@@ -91,4 +97,22 @@
         android:layout="@layout/audio_player_tips"/>
 
 
-</org.videolan.mudiAudioVideo.gui.view.HackyDrawerLayout>
+</org.videolan.hdplayeram.gui.view.HackyDrawerLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:id="@+id/bottomRelative"
+        android:layout_alignParentBottom="true">
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/BANNER">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</RelativeLayout>

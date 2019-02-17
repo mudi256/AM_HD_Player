@@ -4,7 +4,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:context="org.videolan.mudiAudioVideo.gui.dialogs.SubtitleHistoryFragment">
+        tools:context="org.videolan.hdplayeram.gui.dialogs.SubtitleHistoryFragment">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/subtitle_list"

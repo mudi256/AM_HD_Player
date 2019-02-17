@@ -4,7 +4,7 @@
         <import type="android.view.View" />
         <variable
             name="option"
-            type="org.videolan.mudiAudioVideo.gui.dialogs.CtxOption" />
+            type="org.videolan.hdplayeram.gui.dialogs.CtxOption" />
     </data>
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"

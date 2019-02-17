@@ -73,7 +73,7 @@ public class MediaDiscoverer extends VLCObject<MediaDiscoverer.Event> {
      * Create a MediaDiscover.
      *
      * @param libVLC a valid LibVLC
-     * @param name Name of the mudiAudioVideo service discovery ("dsm", "upnp", "bonjour"...).
+     * @param name Name of the hdplayeram service discovery ("dsm", "upnp", "bonjour"...).
      */
     public MediaDiscoverer(LibVLC libVLC, String name) {
         super(libVLC);

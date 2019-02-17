@@ -37,7 +37,8 @@
                     android:contentDescription="@string/info"
                     android:focusable="true"
                     android:clickable="true"
-                    android:src="@drawable/icon" />
+                    android:src="@drawable/icon"
+                    android:visibility="gone"/>
 
             </RelativeLayout>
 
@@ -72,25 +73,6 @@
                 android:text="@string/vlc_authors"
                 android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/main_link"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_weight="0.27"
-                android:autoLink="web"
-                android:gravity="center"
-                android:text="@string/about_link"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/main_revision"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:text="@string/revision"
-                android:textSize="12sp" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -98,7 +80,8 @@
                 android:layout_marginTop="5dp"
                 android:gravity="center"
                 android:text="@string/compiled_by"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:visibility="gone"/>
 
             <TextView
                 android:id="@+id/main_compiled"
@@ -107,7 +90,8 @@
                 android:layout_marginTop="5dp"
                 android:gravity="center"
                 android:text=""
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:visibility="gone"/>
 
         </LinearLayout>
     </ScrollView>

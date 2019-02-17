@@ -6,10 +6,10 @@
         <import type="org.videolan.medialibrary.Tools" />
         <variable
             name="progress"
-            type="androidx.lifecycle.LiveData&lt;org.videolan.mudiAudioVideo.media.Progress>" />
+            type="androidx.lifecycle.LiveData&lt;org.videolan.hdplayeram.media.Progress>" />
         <variable
             name="player"
-            type="org.videolan.mudiAudioVideo.gui.video.VideoPlayerActivity" />
+            type="org.videolan.hdplayeram.gui.video.VideoPlayerActivity" />
     </data>
 <RelativeLayout
     android:id="@+id/progress_overlay"
@@ -120,7 +120,7 @@
             android:onClick="@{(v) -> player.previous()}"
             android:src="@drawable/ic_playlist_previous_circle"
             android:contentDescription="@string/previous"
-            android:visibility="gone" />
+           android:visibility="gone"/>
 
         <ImageView
             android:id="@+id/player_overlay_rewind"
@@ -173,7 +173,7 @@
             android:focusable="true"
             android:onClick="@{(v) -> player.next()}"
             android:contentDescription="@string/next"
-            android:visibility="gone" />
+            android:visibility="gone"/>
 
         <ImageView
             android:id="@+id/player_overlay_adv_function"

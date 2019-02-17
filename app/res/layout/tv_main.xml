@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/transparent">
     <fragment
-          android:name="org.videolan.mudiAudioVideo.gui.tv.MainTvFragment"
+          android:name="org.videolan.hdplayeram.gui.tv.MainTvFragment"
           android:id="@+id/browse_fragment"
           android:layout_width="match_parent"
           android:layout_height="match_parent" />

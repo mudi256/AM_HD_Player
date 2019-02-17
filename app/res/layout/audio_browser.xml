@@ -12,7 +12,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <org.videolan.mudiAudioVideo.gui.view.SwipeRefreshLayout
+    <org.videolan.hdplayeram.gui.view.SwipeRefreshLayout
         android:id="@+id/swipeLayout"
         android:layout_width="@dimen/default_content_width"
         android:layout_height="0dp"
@@ -34,7 +34,7 @@
             <include layout="@layout/audio_recyclerview" />
             <include layout="@layout/audio_recyclerview" />
         </androidx.viewpager.widget.ViewPager>
-    </org.videolan.mudiAudioVideo.gui.view.SwipeRefreshLayout>
+    </org.videolan.hdplayeram.gui.view.SwipeRefreshLayout>
 
     <TextView
         android:id="@+id/no_media"

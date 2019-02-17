@@ -9,7 +9,7 @@
         <import type="org.videolan.medialibrary.media.MediaLibraryItem"/>
         <variable
             name="holder"
-            type="org.videolan.mudiAudioVideo.gui.browser.BaseBrowserAdapter.ViewHolder"/>
+            type="org.videolan.hdplayeram.gui.browser.BaseBrowserAdapter.ViewHolder"/>
         <variable
             name="item"
             type="MediaLibraryItem"/>
@@ -44,7 +44,7 @@
         android:onLongClick="@{holder::onLongClick}"
         android:background="@{bgColor}" >
 
-        <org.videolan.mudiAudioVideo.gui.helpers.ThreeStatesCheckbox
+        <org.videolan.hdplayeram.gui.helpers.ThreeStatesCheckbox
             android:id="@+id/browser_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

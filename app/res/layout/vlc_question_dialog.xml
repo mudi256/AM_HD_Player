@@ -4,7 +4,7 @@
         <import type="android.text.TextUtils" />
         <import type="android.view.View" />
         <variable name="dialog" type="org.videolan.libvlc.Dialog.QuestionDialog"/>
-        <variable name="handler" type="org.videolan.mudiAudioVideo.gui.dialogs.VlcQuestionDialog"/>
+        <variable name="handler" type="org.videolan.hdplayeram.gui.dialogs.VlcQuestionDialog"/>
     </data>
     <ScrollView
             android:layout_width="match_parent"

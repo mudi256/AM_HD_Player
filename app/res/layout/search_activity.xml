@@ -7,7 +7,7 @@
             type="org.videolan.medialibrary.media.SearchAggregate" />
         <variable
             name="handler"
-            type="org.videolan.mudiAudioVideo.gui.SearchActivity.ClickHandler" />
+            type="org.videolan.hdplayeram.gui.SearchActivity.ClickHandler" />
     </data>
     <LinearLayout
         android:layout_width="match_parent"

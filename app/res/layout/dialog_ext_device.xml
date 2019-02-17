@@ -4,7 +4,7 @@
     <data>
         <variable
             name="handler"
-            type="org.videolan.mudiAudioVideo.gui.dialogs.ExtDeviceHandler" />
+            type="org.videolan.hdplayeram.gui.dialogs.ExtDeviceHandler" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

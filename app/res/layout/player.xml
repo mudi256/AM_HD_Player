@@ -38,6 +38,12 @@
             android:visibility="invisible"
             android:src="@drawable/ic_cone_o" />
 
+        <!--<TextureView-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="#ffff"-->
+            <!--android:id="@+id/text"/>-->
+
         <androidx.appcompat.widget.ViewStubCompat
             android:id="@+id/player_info_stub"
             android:layout_width="wrap_content"

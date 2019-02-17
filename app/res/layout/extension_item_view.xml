@@ -7,10 +7,10 @@
         <import type="android.text.TextUtils"/>
         <variable
             name="holder"
-            type="org.videolan.mudiAudioVideo.gui.browser.ExtensionAdapter.ViewHolder"/>
+            type="org.videolan.hdplayeram.gui.browser.ExtensionAdapter.ViewHolder"/>
         <variable
             name="item"
-            type="org.videolan.mudiAudioVideo.extensions.api.VLCExtensionItem"/>
+            type="org.videolan.hdplayeram.extensions.api.VLCExtensionItem"/>
         <variable
             name="cover"
             type="android.graphics.drawable.BitmapDrawable"/>

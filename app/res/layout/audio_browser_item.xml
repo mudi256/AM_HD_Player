@@ -22,7 +22,7 @@
             type="String" />
         <variable
             name="holder"
-            type="org.videolan.mudiAudioVideo.gui.audio.AudioBrowserAdapter.MediaItemViewHolder" />
+            type="org.videolan.hdplayeram.gui.audio.AudioBrowserAdapter.MediaItemViewHolder" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

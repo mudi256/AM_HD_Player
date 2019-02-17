@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
         <variable name="viewmodel"
-            type="org.videolan.mudiAudioVideo.viewmodels.StreamsModel"/>
+            type="org.videolan.hdplayeram.viewmodels.StreamsModel"/>
     </data>
 
     <androidx.core.widget.NestedScrollView

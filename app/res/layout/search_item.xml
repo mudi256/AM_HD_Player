@@ -11,10 +11,10 @@
             type="org.videolan.medialibrary.media.MediaLibraryItem"/>
         <variable
             name="holder"
-            type="org.videolan.mudiAudioVideo.gui.SearchResultAdapter.ViewHolder" />
+            type="org.videolan.hdplayeram.gui.SearchResultAdapter.ViewHolder" />
         <variable
             name="handler"
-            type="org.videolan.mudiAudioVideo.gui.SearchActivity.ClickHandler" />
+            type="org.videolan.hdplayeram.gui.SearchActivity.ClickHandler" />
         <variable
             name="bgColor"
             type="int" />

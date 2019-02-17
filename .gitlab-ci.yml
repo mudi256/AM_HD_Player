@@ -6,7 +6,7 @@ cache:
         - gradlew
 
 .build-all-base:
-    image: registry.videolan.org:5000/mudiAudioVideo-debian-android:20190121160600
+    image: registry.videolan.org:5000/hdplayeram-debian-android:20190121160600
     tags:
         - debian 
         - android
@@ -50,7 +50,7 @@ cache:
     variables:
         EXTRA_BUILD_PARAM: -ml
 
-# mudiAudioVideo-android app only: don't rebuild everything but use a published artifact
+# hdplayeram-android app only: don't rebuild everything but use a published artifact
 # We can't filter by changes for MRs, so this is the only accepted configuration
 # for those, regardless of what changed
 continuous-app-build:
@@ -60,7 +60,7 @@ continuous-app-build:
         - ./gradlew assembleDebug
     only:
         changes:
-            - mudiAudioVideo-android/**/*
+            - hdplayeram-android/**/*
             - assets/**/*
             - .gitlab-ci.yml
     except:
@@ -119,7 +119,7 @@ nightly-arm64:
         ARCH: arm64
     artifacts:
         paths:
-            - mudiAudioVideo-android/build/outputs/apk/dev/VLC-Android-*.apk
+            - hdplayeram-android/build/outputs/apk/dev/VLC-Android-*.apk
         expire_in: 2 weeks
 
 nightly-armv7:
@@ -130,7 +130,7 @@ nightly-armv7:
         ARCH: arm
     artifacts:
         paths:
-            - mudiAudioVideo-android/build/outputs/apk/dev/VLC-Android-*.apk
+            - hdplayeram-android/build/outputs/apk/dev/VLC-Android-*.apk
         expire_in: 2 weeks
 
 nightly-x86:
@@ -141,7 +141,7 @@ nightly-x86:
         ARCH: x86
     artifacts:
         paths:
-            - mudiAudioVideo-android/build/outputs/apk/dev/VLC-Android-*.apk
+            - hdplayeram-android/build/outputs/apk/dev/VLC-Android-*.apk
         expire_in: 2 weeks
 
 nightly-x86_64:
@@ -152,6 +152,6 @@ nightly-x86_64:
         ARCH: x86_64
     artifacts:
         paths:
-            - mudiAudioVideo-android/build/outputs/apk/dev/VLC-Android-*.apk
+            - hdplayeram-android/build/outputs/apk/dev/VLC-Android-*.apk
         expire_in: 2 weeks
 

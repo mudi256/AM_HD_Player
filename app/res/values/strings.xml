@@ -254,16 +254,18 @@
     <string name="licence">License</string>
     <string name="revision">Revision</string>
     <string name="about">About</string>
-    <string name="about_text">AM HD Player for Android™ is a port of AM HD Player media player, the popular open source media player. The Android™ version can read most files and network streams.</string>
+    <string name="about_text">AM HD Player for Android™ is a port of AM HD Player media player, the popular media Player for HD Video Supported up to 80 formates of  Video and 50 of Audio . The Android™ version can read most files .</string>
     <string name="about_link" translatable="false">        &lt;a href=&quot;https://www.videolan.org/AM HD Player/&quot;&gt;https://www.videolan.org/AM HD Player/&lt;/a&gt;</string>
-    <string name="about_copyright" translatable="false">Copyleft &#169; 1996&#8211;2018 by VideoLAN.\n</string>
-    <string name="authors" translatable="false">Edward&#160;Wang, Sébastien&#160;Toque, Adrien&#160;Maglo, Jean-Baptiste&#160;Kempf, Ludovic&#160;Fauvet, Rafaël&#160;Carré, Alexandre&#160;Perraud, Michael&#160;Merg, Martin&#160;Storsjö, Rémi&#160;Duraffort, Dominique&#160;Martinet, Jean-Philippe&#160;André, Felix&#160;Abecassis, Christoph&#160;Miebach, Hugo&#160;Beauzée-Luyssen, Felix&#160;Paul&#160;Kühne, John&#160;Mooring, Pavol&#160;Rusnak, Rohit&#160;Yadav, Tanguy&#160;Pruvot, Thomas&#160;Clavier, Asad&#160;Mehmood, Garret&#160;Kelly, Philipp&#160;Dreimann, Walter&#160;Heck, Thomas&#160;Guillem, Geoffrey&#160;Métais, Habib&#160;Kazemi</string>
-    <string name="vlc_authors">and AM HD Player Authors.</string>
+    <string name="about_copyright" translatable="false">Copyleft &#169; 2018&#8211;2019 by AM HD Player.\n</string>
+    <string name="authors" translatable="false">The general data we collect can include SDK/API/JS code version, browser, Internet service provider, IP address, platform, timestamp, application identifier, application version, application distribution channel, independent device identifier, Android ad master identifier, network card (MAC) address, and international mobile device identification code (IMEI) the equipment model, the terminal manufacturer, the terminal device operating system version, the session start / stop time, the location of the language, the time zone and the network state (WiFi and so on).</string>
+    <string name="vlc_authors">and AM HD Player Team.</string>
     <string name="compiled_by">This version of AM HD Player is compiled by:</string>
 
     <!-- Preferences -->
     <string name="preferences">Settings</string>
-
+    <string name="aboutus">About Us</string>
+    <string name="rateusus">Rate Us</string>
+    <string name="privacypolicy">Privacy Policy</string>
     <string name="general_prefs_category">General</string>
     <string name="directories_summary">Select directories to include in the media library</string>
     <string name="add_custom_path">Add a custom path</string>
@@ -673,7 +675,11 @@
     <string name="video_remote_enable">Switch to remote control mode</string>
     <string name="video_remote_disable">Duplicate screen</string>
     <!--ADMOB-->
-    <string name="AppID">ca-app-pub-9702501548357942~5715351561</string>
-    <string name="BANNER">ca-app-pub-9702501548357942/8888309814</string>
-    <string name="INTERSITIAL">ca-app-pub-9702501548357942/6260655787</string>
+    <string name="AppID">ca-app-pub-1937448801638061~5982583486</string>
+    <string name="BANNER">ca-app-pub-1937448801638061/7412636102</string>
+    <string name="INTERSITIAL">ca-app-pub-1937448801638061/6103423864</string>
+    <!--AdMob Test Ads-->
+    <!--<string name="AppID">ca-app-pub-3940256099942544~3347511713</string>-->
+    <!--<string name="BANNER">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--<string name="INTERSITIAL">ca-app-pub-3940256099942544/1033173712</string>-->
 </resources>

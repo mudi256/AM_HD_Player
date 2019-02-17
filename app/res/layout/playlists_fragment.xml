@@ -17,7 +17,7 @@
             android:layout_marginRight="@dimen/default_margin"
             android:layout_marginEnd="@dimen/default_margin" />
 
-        <org.videolan.mudiAudioVideo.gui.view.SwipeRefreshLayout
+        <org.videolan.hdplayeram.gui.view.SwipeRefreshLayout
             android:id="@+id/swipeLayout"
             android:layout_width="@dimen/default_content_width"
             android:layout_height="0dp"
@@ -27,7 +27,7 @@
             app:layout_constraintBottom_toBottomOf="parent" >
             <include layout="@layout/audio_recyclerview"
                 android:id="@+id/playlist_list" />
-        </org.videolan.mudiAudioVideo.gui.view.SwipeRefreshLayout>
+        </org.videolan.hdplayeram.gui.view.SwipeRefreshLayout>
 
         <TextView
             android:id="@+id/empty"

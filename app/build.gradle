@@ -31,13 +31,13 @@ android {
     }
 
     task luaPlaylistCopy(type: Copy) {
-        from '../mudiAudioVideo/share/lua/playlist'
+        from '../hdplayeram/share/lua/playlist'
         into 'assets/lua/playlist'
         exclude '**/*.txt'
     }
 
     task luaMetaCopy(type: Copy) {
-        from '../mudiAudioVideo/share/lua/meta'
+        from '../hdplayeram/share/lua/meta'
         into 'assets/lua/meta'
         exclude '**/*.txt'
     }
@@ -47,7 +47,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "org.videolan.mudiAudioVideo"
+        applicationId "org.videolan.hdplayeram"
 
         resValue "string", "build_time", buildTime()
         resValue "string", "build_host", hostName()
@@ -99,7 +99,7 @@ android {
             if (project.hasProperty('keyStoreFile')) {
                 storeFile file(project.findProperty('keyStoreFile'))
                 keyAlias project.findProperty('storealias')
-                if (System.getenv('PASSWORD_KEYSTORE') != null && !System.getenv('PASSWORD_KEYSTORE').isEmpty()){
+                if (System.getenv('PASSWORD_KEYSTORE') != null && !System.getenv('PASSWORD_KEYSTORE').isEmpty()) {
                     storePassword = System.getenv('PASSWORD_KEYSTORE')
                     keyPassword = System.getenv('PASSWORD_KEYSTORE')
                 } else {
@@ -116,7 +116,7 @@ android {
             minifyEnabled true
             shrinkResources false
             proguardFile 'proguard.cfg'
-            kotlinOptions.freeCompilerArgs = [ 'Xno-param-assertions']
+            kotlinOptions.freeCompilerArgs = ['Xno-param-assertions']
         }
         signedRelease {
             initWith release
@@ -169,13 +169,13 @@ android {
         }
     }
 
-    def abiCodes = ['x86':5, 'x86_64':8, 'armeabi-v7a':4, 'arm64-v8a':7]
+    def abiCodes = ['x86': 5, 'x86_64': 8, 'armeabi-v7a': 4, 'arm64-v8a': 7]
     // make per-variant version code
     applicationVariants.all { variant ->
         //Custom APK name and versionCode
         variant.outputs.each { output ->
             def abiName = output.getFilter(OutputFile.ABI) ?: System.getenv('GRADLE_ABI')?.toLowerCase() ?: "all"
-            output.versionCodeOverride = 10000000 + defaultConfig.versionCode + abiCodes.get(abiName, 0)
+            output.versionCodeOverride = 30000000 + defaultConfig.versionCode + abiCodes.get(abiName, 0)
             def outputName = "AMHD-Android-"
             outputName += variant.versionName + "-" + abiName + ".apk"
             output.outputFileName = outputName
@@ -212,12 +212,14 @@ android {
     }
 }
 
-task generateSources (type: Jar) {
+task generateSources(type: Jar) {
     classifier = 'sources'
     from android.sourceSets.main.java.srcDirs
 }
 
 dependencies {
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
     devImplementation project(':libvlc')
     devImplementation project(':medialibrary')
     debugImplementation "org.videolan.android:libvlc-all:$rootProject.ext.libvlcVersion"
@@ -269,6 +271,7 @@ dependencies {
     testImplementation "org.powermock:powermock-module-junit4:$rootProject.ext.powerMock"
     implementation 'com.google.android.gms:play-services-ads:17.1.1'
     implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
 }
 
 static def buildTime() {

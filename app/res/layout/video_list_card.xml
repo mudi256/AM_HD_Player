@@ -44,7 +44,7 @@
 
         <variable
             name="holder"
-            type="org.videolan.mudiAudioVideo.gui.video.VideoListAdapter.ViewHolder" />
+            type="org.videolan.hdplayeram.gui.video.VideoListAdapter.ViewHolder" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

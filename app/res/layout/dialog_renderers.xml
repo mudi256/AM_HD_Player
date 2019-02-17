@@ -6,7 +6,7 @@
         <import type="org.videolan.libvlc.RendererItem" />
         <variable
             name="holder"
-            type="org.videolan.mudiAudioVideo.gui.dialogs.RenderersDialog.RendererClickhandler" />
+            type="org.videolan.hdplayeram.gui.dialogs.RenderersDialog.RendererClickhandler" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"

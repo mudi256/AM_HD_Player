@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
     <fragment
         android:id="@+id/search_fragment"
-        android:name="org.videolan.mudiAudioVideo.gui.tv.SearchFragment"
+        android:name="org.videolan.hdplayeram.gui.tv.SearchFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
     <TextView
